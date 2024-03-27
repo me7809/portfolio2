@@ -1,0 +1,64 @@
+.skills{
+	padding: 2rem;
+	background: var(--sec-bg-color);
+}
+.skills .title{
+	display: flex;
+	justify-content: center;
+}
+.skills .title > h2{
+	font-size: 1.7rem;
+	font-weight: bold;
+	line-height: 2;
+	position: relative;
+}
+.skills .title > h2::before{
+	content: "";
+   position: absolute;
+	background-color: var(--main-color);
+	width: 50px;
+   height: 3px;
+	bottom: 0;
+	right: 0;
+}
+.skills .skills_content{
+	padding: 2rem 0;
+}
+.skills .skills_content .content_left,
+.skills .skills_content .content_right{
+	padding: 1rem;
+}
+.skills .skills_content .content_left h3,
+.skills .skills_content .content_left h3 > span{
+	font-size: 1.2rem;
+   font-weight: 500;
+}
+.skills .skills_content .content_left p{
+	font-size: 0.8rem;
+   line-height: 1.7;
+}
+.skills .skills_content .progress .bar{
+	display: inline-block;
+	width: 100%;
+	height: 4px;
+   background-color: var(--gray);
+	overflow: hidden;
+	position: relative;
+
+}
+.skills .skills_content .progress .bar span{
+   position: absolute;
+	background-color: var(--main-color);
+	height: 4px;
+   top: 0;
+   left: 0;
+}
+@media (max-width: 767px) {
+	.skills .skills_content{
+		flex-direction: column;
+	}
+	.skills .skills_content .content_left,
+	.skills .skills_content .content_right{
+		width: 100%;
+	}
+}

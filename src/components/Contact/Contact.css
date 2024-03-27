@@ -1,0 +1,88 @@
+.contact{
+	padding: 2rem;
+	background-color: var(--main-bg-color);
+}
+.contact .title > h2{
+	font-size: 1.7rem;
+	font-weight: bold;
+	line-height: 2;
+	display: inline-block;
+	position: relative;
+}
+.contact .title > h2::before{
+	content: "";
+   position: absolute;
+	background-color: var(--main-color);
+	width: 50px;
+   height: 3px;
+	bottom: 0;
+	right: 0;
+}
+.contact .content_con{
+	padding: 2rem 0;
+}
+.contact .content_con .con_left form p{
+	font-size: 1.1rem;
+   line-height: 2;
+}
+.contact .content_con .con_left form input,
+.contact .content_con .con_left form textarea{
+	padding: 7px;
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+.contact .content_con .con_left form textarea{
+	resize: none;
+	height: 80px;
+}
+.contact .content_con .con_left form button{
+	margin-top: 1rem;
+	border: 1px solid var(--main-color);
+	padding: 0.4rem 0;
+	width: 10rem;
+   border-radius: 0.3rem;
+	color: var(--white);
+	background-color: transparent;
+}
+.contact .content_con .con_left form button:hover{
+	background: var(--main-color);
+	border-color: var(--border-color);
+	color: var(--black);
+}
+.contact .content_con .con_left form button i{
+	margin-left: 0.3rem;
+}
+.contact .content_con .con_right{
+	padding: 1rem 2rem;
+}
+.contact .content_con .con_right h3{
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+.contact .content_con .con_right p.topic{
+	font-size: 0.9rem;
+	line-height: 1.4;
+	margin-bottom: 1rem;
+}
+.contact .content_con .con_right > a i {
+	margin-right: 1rem;
+	color: var(--main-color);
+}
+.contact .div-err > p{
+	width: calc(100% / 2);
+}
+.contact .msgErr{
+	color: #f00;
+}
+@media (max-width: 767px) {
+	.contact .content_con{
+		flex-direction: column;
+	}
+	.contact .content_con .con_left,
+	.contact .content_con .con_right{
+		width: 100%;
+		padding: 1rem 0;
+	}
+}
